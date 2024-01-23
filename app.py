@@ -8,15 +8,6 @@ model=genai.GenerativeModel('gemini-pro')
 st.title(" SQL QUERY GENERATOR  🧑‍🚀:")
 st.subheader("let's generate a SQL Query 🧾!!!!")
 
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/Azure-SQL-Server-Monitoring.png/_jcr_content/renditions/cq5dam.web.1280.1280.png");
-background-size: cover;
-}
-</style>
-'''
-
 with st.sidebar:
     st.header("Query Generator ")
     st.write('With an intuitive user interface and a user-friendly design, this  application invites users to embark on a creative odyssey. By simply providing few inputs from  user  the application harnesses the transformative power of Gemini Pro to generate a quality  SQL QUERY with Explaination .')
