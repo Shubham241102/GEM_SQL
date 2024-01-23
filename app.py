@@ -62,6 +62,8 @@ if submit:
 
             st.success("Explanation for the SQL Query Will be :")
             st.markdown(explanation)
+            st.failure('I think I may have entered the wrong spell... ')
+            
             st.balloons()
 
 
