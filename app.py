@@ -15,6 +15,17 @@ with st.sidebar:
 text_input=st.text_input("PLease enter your Query in Plain English: ")
 submit=st.button("Generate Query")
 
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://www.ibm.com/content/dam/adobe-cms/instana/media_logo/Azure-SQL-Server-Monitoring.png/_jcr_content/renditions/cq5dam.web.1280.1280.png");
+background-size: cover;
+}
+</style>
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 if submit:
 
     with st.spinner("Please Wait....."):
