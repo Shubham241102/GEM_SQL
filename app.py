@@ -8,13 +8,6 @@ model=genai.GenerativeModel('gemini-pro')
 st.title(" SQL QUERY GENERATOR  🧑‍🚀:")
 st.subheader("let's generate a SQL Query 🧾!!!!")
 
-with st.sidebar:
-    st.header("Query Generator ")
-    st.write('With an intuitive user interface and a user-friendly design, this  application invites users to embark on a creative odyssey. By simply providing few inputs from  user  the application harnesses the transformative power of Gemini Pro to generate a quality  SQL QUERY with Explaination .')
-
-text_input=st.text_input("PLease enter your Query in Plain English: ")
-submit=st.button("Generate Query")
-
 page_bg_img = '''
 <style>
 body {
@@ -23,6 +16,13 @@ background-size: cover;
 }
 </style>
 '''
+
+with st.sidebar:
+    st.header("Query Generator ")
+    st.write('With an intuitive user interface and a user-friendly design, this  application invites users to embark on a creative odyssey. By simply providing few inputs from  user  the application harnesses the transformative power of Gemini Pro to generate a quality  SQL QUERY with Explaination .')
+
+text_input=st.text_input("PLease enter your Query in Plain English: ")
+submit=st.button("Generate Query")
 
 st.markdown(page_bg_img, unsafe_allow_html=True)
 
