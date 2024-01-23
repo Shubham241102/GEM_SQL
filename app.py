@@ -15,8 +15,6 @@ with st.sidebar:
 text_input=st.text_input("PLease enter your Query in Plain English: ")
 submit=st.button("Generate Query")
 
-st.markdown(page_bg_img, unsafe_allow_html=True)
-
 if submit:
 
     with st.spinner("Please Wait....."):
