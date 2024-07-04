@@ -37,6 +37,19 @@ if submit:
         sql_query=response.text
         st.write(sql_query)
 
+        expected_outpput="""
+            what would be the expected quuery response for this SQL qquery snippet:
+                ```
+                {sql_query}
+                ```
+            provide simple tabular response wihout any explanation:
+
+        """
+        expected_output_formatted= expected_output.format(sql_query=sql_query)
+        eoutput=model.generate_content(expected_output_formatted)
+        eoutput=eoutpput.text
+        st.write(eoutput)
+
         explanation="""
             Explain This SQL Query:
 
