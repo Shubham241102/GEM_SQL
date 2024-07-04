@@ -37,7 +37,7 @@ if submit:
         sql_query=response.text
         st.write(sql_query)
 
-        expected_outpput="""
+        expected_output="""
             what would be the expected quuery response for this SQL qquery snippet:
                 ```
                 {sql_query}
@@ -47,7 +47,7 @@ if submit:
         """
         expected_output_formatted= expected_output.format(sql_query=sql_query)
         eoutput=model.generate_content(expected_output_formatted)
-        eoutput=eoutpput.text
+        eoutput=eoutput.text
         st.write(eoutput)
 
         explanation="""
